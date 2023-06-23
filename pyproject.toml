@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kino-autobot"
+version = "0.1.0"
+description = ""
+authors = ["TRoYals <aozora00321@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kino_autobot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "4.1.0"
+webdriver-manager = "^3.8.6"
+python-dotenv = "^1.0.0"
+faker = "^18.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
