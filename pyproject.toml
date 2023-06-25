@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "kino-autobot"
+name = "autobot"
 version = "0.1.0"
 description = ""
 authors = ["TRoYals <aozora00321@gmail.com>"]

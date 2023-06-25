@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import time
-
+from file_system import File_system
 
 from dotenv import load_dotenv
 import os
@@ -193,4 +193,14 @@ print(test.username)
 time.sleep(3)
 test.step_to_business_advisor()
 # test.step_to_day_item_set_earlist_day()
+temp_file = File_system("./temp")
 test.download_file()
+time.sleep(3)
+new_files = temp_file.check_new_files()
+if new_files:
+    print("发现新的文件:")
+    for file in new_files:
+        print(file)
+else:
+    print("没有发现新的文件")
+test.driver.quit()
