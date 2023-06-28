@@ -1,7 +1,7 @@
 {
-  "name": "honkit",
+  "name": "kino_autobot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Selenium bot for automating the process of checking the daily schedule.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -9,6 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^4.0.7"
+  }
 }
